@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script src="js/platform.js"></script>
+<style>
+#mapBox {
+	margin-left: -150px;
+	padding-left: 50%;
+}
+</style>
+<title>Hello World</title>
+</head>
+<body>
+	<div id="mapBox">
+		<light-map width="350" height="400"></light-map>
+	</div>
+	<script
+		src="http://api.map.baidu.com/api?v=1.5&ak=74af171e2b27ee021ed33e549a9d3fb9"></script>
+	<script src="cordova.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/map.js"></script>
+	<script>
+		app.initialize();
+	</script>
+	<div>
+		<div class="group-left">
+			<div
+				class="field field-name-field-speaker field-type-entityreference field-label-inline clearfix">
+				<div class="field-label">讲师:&nbsp;</div>
+				<div class="field-items">
+					<div class="field-item even">
+						<div typeof="sioc:UserAccount" about="http://www.qconbeijing.com/user/724"
+							class="ds-1col user-profile view-mode-user_name clearfix">
+							<div
+								class="field field-name-field-xing-min field-type-text field-label-hidden">
+								<div class="field-items">
+									<div class="field-item even">
+										<a href="http://www.qconbeijing.com/user/724">王集鹄</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="field field-name-field-track field-type-entityreference field-label-inline clearfix">
+				<div class="field-label">所属专题:&nbsp;</div>
+				<div class="field-items">
+					<div class="field-item even">
+						<a href="http://www.qconbeijing.com/node/453">移动时代的前端</a>
+					</div>
+				</div>
+			</div>
+			<div
+				class="field field-name-field-abstract field-type-text-long field-label-hidden">
+				<div class="field-items">
+					<div class="field-item even">
+						<p>NativeApp无疑具备了所有的端能力，但上线依赖各种分发渠道和市场审核，使用不同的语言环境开发，研发成本相对较高。</p>
+						<p>WebApp具有迭代方便的优势，包括开发迭代快、上线迭代快，但端能力受限于浏览器的实现程度。</p>
+						<p>HybridApp能扩展端能力，并保留了WebApp的开发迭代快优势，但产品上线也需要分发。</p>
+						<p>LightApp和HybirdApp很像，区别在于LightApp解决了分发渠道的问题，同时能够扩展端能力。</p>
+						<p>在参与实际项目中，我们发现一种需求：期望研发的应用能在以WebApp、HybridApp、LightApp形式运行，在具备端扩展能力的环境中用户可以获得更好的体验。</p>
+						<p>受Web响应式设计的启发，我们把能够自动响应端能力的组件，抽象为一个跨端组件。</p>
+						<p>本次分享包括：跨端组件概念介绍；跨端组件架构相关的设计、开发和调试；产品案例讲解；围绕移动应用开发的趋势和大家做一些探讨。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
